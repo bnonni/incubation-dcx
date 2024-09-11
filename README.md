@@ -30,7 +30,7 @@ To learn how to use DCX in your own project, check out [/docs/usage/README.md](/
 | [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) | Expected behavior for project contributors, promoting a welcoming environment |
 | [CONTRIBUTING.md](./CONTRIBUTING.md)       | Developer guide to build, test, run, access CI, chat, discuss, file issues    |
 | [GOVERNANCE.md](./GOVERNANCE.md)           | Project governance                                                            |
-| [LICENSE](./LICENSE)                       | [![Apache License 2.0][apache-license-badge]](apache-license-link)            |
+| [LICENSE](./LICENSE)                       | [![Apache License 2.0][apache-license-badge]][apache-license-link]            |
 
 [apache-license-badge]: https://img.shields.io/badge/license-Apache%202.0-blue.svg
 [apache-license-link]: https://opensource.org/licenses/Apache-2.0
