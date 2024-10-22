@@ -1,0 +1,58 @@
+{
+    "id": "dcx-handshake-manifest:506a093652f5dec58394c2497602427d",
+    "name": "DCX Applicant-Issuer Handshake Manifest",
+    "description": "Basic handshake manifest used to establish a connection between a DCX applicant and a DCX issuer.",
+    "spec_version": "https://identity.foundation/credential-manifest/spec/v1.0.0/",
+    "issuer": {
+        "id": "",
+        "name": "",
+        "styles": {
+            "thumbnail": {
+                "uri": "https://dcxprotocol.com/images/thumbnail.jpg",
+                "alt": ""
+            },
+            "hero": {
+                "uri": "https://dcxprotocol.com/images/hero.jpg",
+                "alt": ""
+            },
+            "background": {
+                "color": "#FFFFFF"
+            },
+            "text": {
+                "color": "#000000"
+            }
+        }
+    },
+    "output_descriptors": [
+        {
+            "id": "dcx-handshake-output",
+            "name": "DCX Handshake Credential",
+            "schema": "https://dcxprotocol.com/.well-known/credential/HandshakeCredential"
+        }
+    ],
+    "format": {
+        "jwt": {
+            "alg": [
+                "EdDSA"
+            ]
+        }
+    },
+    "presentation_definition": {
+        "id": "handshake-presentation",
+        "input_descriptors": [
+            {
+                "id": "handshake-input",
+                "purpose": "",
+                "constraints": {
+                    "fields": [
+                        {
+                            "path": [
+                                "$.credentialSubject.timestamp"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
